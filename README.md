@@ -1,7 +1,18 @@
 # Finding-Numbers-in-a-Haystack-Python
 Parse a file with text and numbers and then extracting all the numbers in the file and computing the sum of the numbers.
 
+Also make sure to save the file into the same folder as you will be writing your Python program.
 
-Hello People!
 
-I must say that I've fallen in love with the language Python and I never feel satisfied with its learning. I always tend to learn more, touch the deeper sections inorder to write codes better than previous ones. One speciality of the language I've experienced is it has consumed me completely while C and C++ seemed burden to be studied. I aspire to build my career in Python and I will someday! Happy coding Pythoniers!;-P
+import re
+
+text = open ('regex_sum_193782.txt')
+numberslist = list()
+for sentences in text:
+    txt = sentences.rstrip()
+    results = re.findall('[0-9]+', txt)
+    for answer in results:
+        y = int(answer)
+        numberslist.append(y)
+
+print ( 'There are ' +  str(len(numberslist)) + ' numbers in this file that have a total sum of ' + str(sum(numberslist)))
