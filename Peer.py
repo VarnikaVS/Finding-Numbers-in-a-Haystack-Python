@@ -1,0 +1,1 @@
+print ('Prof Charles Severance has the dexterous knowledge and has made a huge positive impact on our minds to learn the language Python. I indeed feel privileged to study under his tutelage. Thank You!')
